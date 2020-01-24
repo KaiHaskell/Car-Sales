@@ -2,17 +2,18 @@ export const ADD_ITEM = "ADD_ITEM";
 export const REMOVE_ITEM = "REMOVE_ITEM";
 export const UPDATE_TOTAL = "UPDATE_TOTAL";
 
-export function addItem(input) {
+export function addItem(action) {
+  console.log(action);
   return {
-    type: "ADD_ITEM",
-    payload: input
+    type: ADD_ITEM,
+    payload: action
   };
 }
 
-export function removeItem(input) {
+export function removeItem(action) {
   return {
-    type: "REMOVE_ITEM",
-    payload: input
+    type: REMOVE_ITEM,
+    payload: action
   };
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddedFeature = props => {
-  console.log("From AddedFeature.js", props);
+  console.log("From AddedFeature.js", props.feature);
   return (
     <li>
       {/* Add an onClick to run a function to remove a feature */}
